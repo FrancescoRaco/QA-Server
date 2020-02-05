@@ -199,4 +199,5 @@ Istruzioni per importare il progetto nell'ambiente di sviluppo:
 
 - Scaricare l'archivio .zip ed importare il progetto
 - Configurare il Build Path in modo da importare correttamente le librerie contenute nella cartella "libs"
-- Scaricare i file compressi corrispondenti agli indici, rispettivamente completo e ridotto ed estrarne la cartella nel percorso principale del progetto
+- Scaricare i file compressi corrispondenti agli indici, rispettivamente completo (link da fornire...) e ridotto (link da fornire...), ed estrarne la cartella nel percorso "data/" del progetto
+- Assicurarsi che la cartella "data" sia presente nel class path del progetto (configurabile tramite il build path)
