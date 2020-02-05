@@ -177,7 +177,7 @@ I topic in questione sono: l’attrice Jenny Wright (m.0gczs7), il film Pink Flo
 
 Q: who is Jenny Wright?
 
-PensieroProfondo sa che e' una persona:
+Machine sa che e' una persona:
 
 <http://rdf.freebase.com/ns/people.person>      <http://rdf.freebase.com/ns/type.type.instance> <http://rdf.freebase.com/ns/m.0gczs7>   .
 
@@ -187,10 +187,16 @@ e che è una attrice:
 
 Q: where was Jenny Wright born?
 
-PensieroProfondo sa che è nata a New York:
+Machine sa che è nata a New York:
 
 <http://r df.freebase.com/ns/m.02_286>   <http://rdf.freebase.com/ns/location.location.people_born_here> <http://rdf.freebase.com/ns/m.0gczs7>   .
 
 Server
 
 Il modulo Server è attivo 24h e in ascolto sulla porta TCP 8080. Spiegazioni dettagliate sono fornite dai commenti del codice sorgente.
+
+Istruzioni per importare il progetto nell'ambiente di sviluppo:
+
+- Scaricare l'archivio .zip ed importare il progetto
+- Configurare il Build Path in modo da importare correttamente le librerie contenute nella cartella "libs"
+- Scaricare i file compressi corrispondenti agli indici, rispettivamente completo e ridotto ed estrarne la cartella nel percorso principale del progetto
