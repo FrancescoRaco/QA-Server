@@ -16,7 +16,7 @@ Download e formato dei dati in input
 
 La versione di Freebase ridotta al dominio del cinema è scaricabile da:
 
-...da fornire...
+https://mega.nz/#!21BkWSxT!yo1Y3_FahgcgFpfWlKzoTmldSU7RGXa3z-MVTDO-TG4
 
 Il file è strutturato come un elenco di relazioni (soggetto, predicato, oggetto) in formato N3 ovvero una tripla per ogni linea. Il file contiene solo topic collegati ai film, per un totale di 127 milioni di triple (17G scompattato e 1.7G compattato). Il numero di predicati unici è pari a 13258 ed il numero di topic è 4555082. 
 Per la lettura del file delle triple di Freebase viene letto direttamente il file .gz, senza scompattarlo, utilizzando la classe GZIPInputStream:
@@ -199,5 +199,5 @@ Istruzioni per importare il progetto nell'ambiente di sviluppo:
 
 - Scaricare l'archivio .zip ed importare il progetto
 - Configurare il Build Path in modo da importare correttamente le librerie contenute nella cartella "libs"
-- Scaricare i file compressi corrispondenti agli indici, rispettivamente completo (link da fornire...) e ridotto (link da fornire...), ed estrarne la cartella nel percorso "data/" del progetto
+- Scaricare i file compressi corrispondenti agli indici, rispettivamente completo (https://mega.nz/#!21BkWSxT!yo1Y3_FahgcgFpfWlKzoTmldSU7RGXa3z-MVTDO-TG4) e ridotto (link da fornire...), ed estrarne la cartella nel percorso "data/" del progetto
 - Assicurarsi che la cartella "data" sia presente nel class path del progetto (configurabile tramite il build path)
