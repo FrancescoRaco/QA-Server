@@ -16,7 +16,7 @@ Download e formato dei dati in input
 
 La versione di Freebase ridotta al dominio del cinema è scaricabile da:
 
-http://babelware.org/pensieroprofondo/fb_triples_film.gz
+...da fornire...
 
 Il file è strutturato come un elenco di relazioni (soggetto, predicato, oggetto) in formato N3 ovvero una tripla per ogni linea. Il file contiene solo topic collegati ai film, per un totale di 127 milioni di triple (17G scompattato e 1.7G compattato). Il numero di predicati unici è pari a 13258 ed il numero di topic è 4555082. 
 Per la lettura del file delle triple di Freebase viene letto direttamente il file .gz, senza scompattarlo, utilizzando la classe GZIPInputStream:
