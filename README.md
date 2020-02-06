@@ -181,5 +181,5 @@ Istruzioni per importare il progetto nell'ambiente di sviluppo:
 
 - Scaricare l'archivio .zip ed importare il progetto
 - Configurare il Build Path in modo da importare correttamente le librerie contenute nella cartella "libs"
-- Scaricare i file compressi corrispondenti agli indici, rispettivamente completo (https://mega.nz/#!21BkWSxT!yo1Y3_FahgcgFpfWlKzoTmldSU7RGXa3z-MVTDO-TG4) e ridotto (link da fornire...), ed estrarne la cartella nel percorso "data/" del progetto
+- Scaricare i file compressi corrispondenti agli indici, rispettivamente completo (https://mega.nz/#!21BkWSxT!yo1Y3_FahgcgFpfWlKzoTmldSU7RGXa3z-MVTDO-TG4) e ridotto (https://mega.nz/#!CkRQ1CDK!mCiXG0T8mZk6ViKjSK2XzL5WtRcOubJto_71pkZUdiI), ed estrarne la cartella nel percorso "data/" del progetto
 - Assicurarsi che la cartella "data" sia presente nel class path del progetto (configurabile tramite il build path)
