@@ -65,9 +65,6 @@ Indicizzatore
 Searcher
 Question Answering
 Server
-it.uniroma1.lcl.pensieroprofondo.qa
-
-Il package it.uniroma1.lcl , invece, dovrà contenere le classi Type, Topic (e, se implementate, le classi Language e Graph).
 
 
 Indicizzatore
@@ -131,7 +128,7 @@ Il sistema permette i seguenti tipi di domande in lingua inglese:
 Che cosa è X? (ad es. “what is Matrix?”, “what is Lucasfilm?”)
 Chi è X? (ad es. “who is Homer Simpson?”)
 Dove è nato X?
-Se il topic richiesto non è rispettivamente un’entità non vivente (“what is X?”) o una persona (“who is X?”, “where was X born?”), PensieroProfondo risponde adeguatamente.
+Se il topic richiesto non è rispettivamente un’entità non vivente (“what is X?”) o una persona (“who is X?”, “where was X born?”), Machine risponde adeguatamente.
 “Who has directed X?”) dove “directed” è un’azione associata a un determinata proprietà (“film.film.directed_by”).
 “Tell me X Y”, dove X è un numero e Y è un tipo (ad es. “tell me 10 cities”, dove cities è associato al tipo “location.citytown”; oppure, “Tell me 10 movies”, dove movies è associato al tipo “film.film”.
 “Tell me Y of X”, dove X è un topic e Y è una stringa mappata a un predicato (ad esempio, “Tell me the genre of Pink Floyd  – The Wall”, dove “genre” è mappato al predicato “film.film_genre” e “Pink Floyd  – The Wall” è un topic) 
@@ -159,21 +156,6 @@ Q: who has written Pink Floyd – The Wall?
 La seguente tripla contiene una possibile risposta (m.017g21 è Roger Waters):
 
 <http://rdf.freebase.com/ns/m.058ymm>   <http://rdf.freebase.com/ns/film.film.written_by>   	 <http://rdf.freebase.com/ns/m.017g21>   .
-
-Q: tell me the actors of Pink Floyd – The Wall
-
-La seguente tripla contiene una possibile risposta. In questo caso la risposta non è specificata direttamente nella tripla, perché il topic oggetto del predicato (m.0y58gz5) rappresenta una collezione di proprietà, ovvero nello specifico una film performance:
-
-<http://rdf.freebase.com/ns/m.058ymm>   <http://rdf.freebase.com/ns/film.film.starring> <http://rdf.freebase.com/ns/m.0y58gz5>
-
-La collezione di proprietà in m.0y58gz5 è accessibile mediante altri predicati che mettono in relazione la film performance m.0y58gz5 con diversi topic. Ad esempio:
-
-<http://rdf.freebase.com/ns/m.0y58gz5>   <http://rdf.freebase.com/ns/film/performance/actor> <http://rdf.freebase.com/ns/m.0gczs7>
-<http://rdf.freebase.com/ns/m.0y58gz5>	  <http://rdf.freebase.com/ns/film/performance/film>	<http://rdf.freebase.com/ns/m.058ymm>
-<http://rdf.freebase.com/ns/m.0y58gz5>	 <http://rdf.freebase.com/ns/film/performance/character>	<http://rdf.freebase.com/ns/m.0y58gz8>
-<http://rdf.freebase.com/ns/m.0y58gz5>	 <http://rdf.freebase.com/ns/type/object/type>	<http://rdf.freebase.com/ns/film/performance>
-
-I topic in questione sono: l’attrice Jenny Wright (m.0gczs7), il film Pink Floyd – The Wall (m.058ymm), il personaggio American Groupie (m.0y58gz8) e il tipo della collezione (film/performance).
 
 Q: who is Jenny Wright?
 
