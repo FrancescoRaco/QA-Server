@@ -636,8 +636,9 @@ public class Machine
 			  askForStarring(true, Topic.class, list, 6, list.indexOf("of") +1, list.size(), getLabel(list, 6, 3, list.indexOf("of")));
 			else quantityChoice(true, Integer.parseInt(list.get(2)), Topic.class, list, "type", false, "Wrong input", Searcheable.VALUE, list.get(3));
 		}
-		Map<Element, Set<Element>> map2 = map;
-		map = new TreeMap<Element, Set<Element>>();
+		Map<Element, Set<Element>> map2 = new TreeMap<Element, Set<Element>>();
+		map2.putAll(map);
+		map.clear();;
 		return map2;
 	}
 
